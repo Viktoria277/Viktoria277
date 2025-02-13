@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charster = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення суші</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Замовлення суші</h1>
+        <form action="submit_order.php" method="post"> 
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address">Адреса:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="chopsticks">Кількість паличок:</label>
+            <input type="number" id="chopsticks" name="chopsticks" min="0" value="0" required><br><br>
+
+            <label>Вид паличок:</label><br>
+            <input type="radio" id="normal" name="chopstick_type" value="normal" checked>
+            <label for="normal">Звичайні</label><br>
+            <input type="radio" id="training" name="chopstick_type" value="training">
+            <label for="training">Навчальні</label><br><br>
+
+            <label for="sushi">Список для вибору суші:</label><br>
+            <select id="sushi" name="sushi[]" multiple required>
+                <option value="california">Каліфорнія</option>
+                <option value="philadelphia">Філадельфія</option>
+                <option value="dragon">Нігірі</option>
+                </select><br><br>
+
+            <input type="checkbox" id="napkins" name="napkins">
+            <label for="napkins">Чи потрібні серветки?</label><br><br>
+
+            <label for="comment">Додатковий коментар:</label><br>
+            <textarea id="comment" name="comment"></textarea><br><br>
+        </form>
+    </div>
+</body>
+
+</html>
