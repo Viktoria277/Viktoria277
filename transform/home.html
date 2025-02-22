@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 1 -->
+    <h1>Hello</h1>
+</head>
+<body>
+    
+</body>
+</html>
+<style>
+h1 {
+    animation: blink 1s linear infinite; 
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+</style>
+<!-- 2 -->
+<div class="ball"></div>
+<style>
+    .ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 1s ease-in-out infinite; 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(100px); 
+  }
+  100% {
+    transform: translateY(0); /
+  }
+}
+</style>
+<!-- 3 -->
+<p>Hello, world!</p>
+<style>
+    p {
+  animation: move 7s linear infinite; 
+  white-space: nowrap; 
+  overflow: hidden; 
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+</style>
