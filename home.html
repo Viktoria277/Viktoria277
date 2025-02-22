@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dog Example</title>
+</head>
+<body>
+<h1>Dog Information</h1>
+<p id="dogName"></p>
+<p id="dogBreed"></p>
+<p id="dogAge"></p>
+<button onclick="makeSound()">Make Sound</button>
+
+<script>
+    const myDog = {
+        name: "Buddy",
+        breed: "Golden Retriever", 
+        age: 3,
+        makeSound: function() {
+            alert("Woof!");
+        }
+    };
+
+    document.getElementById("dogName").textContent = "Name: " + myDog.name;
+    document.getElementById("dogBreed").textContent = "Breed: " + myDog.breed; 
+    document.getElementById("dogAge").textContent = "Age: " + myDog.age;
+
+    function makeSound() {
+        myDog.makeSound();
+    }
+</script>
+</body>
+</html>
