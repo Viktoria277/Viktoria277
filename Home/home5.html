@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зв'яжіться з нами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Зв'яжіться з нами</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-column">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="subject">Тема</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+            </div>
+            <button type="submit">НАДІСЛАТИ</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Фото з <a href="https://unsplash.com/">unsplash.com</a></p>
+        <p><a href="#">Головна</a> | <a href="#">Про нас</a> | <a href="#">Роботи</a> | <a href="#">Команда</a> | <a href="#">Відгуки</a> | <a href="#">Контакти</a></p>
+        <p>Інформація з <a href="http://html-plus.in.ua/">html-plus.in.ua</a></p>
+    </div>
+    <style>
+        body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-column {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.form-column:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+    </style>
+</body>
+</html>

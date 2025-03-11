@@ -36,7 +36,7 @@
             }
 
             input[type = "sudmit"]{
-                beckground: black;
+                background: black;
                 color: white;
             }
             input[type = "text"]{
