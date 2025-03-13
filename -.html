@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Різниця між адаптивним та чуйним дизайном</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="home">Головна</span> / <span class="articles">Статті</span> /
+        </div>
+        <div class="title">
+            Різниця між<br>
+            Адаптивним та<br>
+            Чуйним Дизайном
+        </div>
+        <div class="details">
+            <div class="author">
+                <img src="https://grizly.club/uploads/posts/2023-08/1691042685_grizly-club-p-kartinki-ava-bez-fona-54.jpg" alt="Автор">
+                <span>Geoff Graham</span>
+                
+                <a href="">Перейти до коментарів</a>
+              <a href="">Опубліковано 11 листопада 2018</a>
+              <a href="">Оновлено 17 листопада 2018</a>
+            </div>
+            
+        </div>
+    </div>
+    <style>
+        
+
+.container {
+    background-color: #014141;
+    color: white;
+    padding: 20px;
+}
+
+.header {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.dates span {
+    display: block;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .author {
+        margin-bottom: 10px;
+    }
+
+    .dates span {
+        text-align: left;
+    }
+}
+    </style>
+</body>
+</html>
