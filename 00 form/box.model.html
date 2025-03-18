@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-size: sans-serif;
+        }
+
+        header{
+            background-color: #ff6825;
+            text-align: center;
+            height: 150px;
+            padding: 8% 0;
+        }
+
+        h1{
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow:  2px 2px 2px rgba(0, 0, 0, 0, 4);
+        }
+
+        header h2{
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+                 margin: 1.2rem;
+                 text-decoration: none;
+        }
+
+        h2{
+            text-decoration: underline;
+            text-decoration-style:dotted ;
+            font-family: Cambria, serif;
+        }
+
+        .half{
+            float: left;
+            width: 47%;
+            padding: 1.5%;
+
+        }
+
+        .right-block{
+            float: right;
+            padding: 15px;
+            margin-left: 10px;
+        }
+
+        .video{
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            padding: 10px 15px 10px 28px;
+            border-radius: 10px/14px;
+            cursor: pointer;
+        }
+
+        .play{
+            border: 10px solid transparent;
+            border-left-color:white;
+        }
+
+        .container{
+            max-width: 1200px;
+            width: 90%;
+            min-width: 768px;
+            margin: auto;
+        }
+
+        .container::after{
+            clear: both;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .course{
+            width: 17%;
+            padding: 1.5%;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sample Page</h1>
+            <h2>with CSS Box model</h2>
+            <p>for students</p>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="half">
+            <h2>ABOUT US</h2>
+
+            <div class="right-block">
+                <div class="video">
+                    <div class="play"></div>
+                </div>
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatem at voluptas in consequuntur corrupti cum atque, vel ipsam quasi accusamus praesentium hic laudantium perferendis excepturi, blanditiis itaque dignissimos et!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo autem repudiandae dolorum odit illum sed doloribus vero laborum? Eveniet, explicabo! Atque itaque, quam quos recusandae fuga repellendus sunt nam!</p>
+        </div>
+
+        <div class="half">
+            <h2>Our mission</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil esse, et sunt quisquam deleniti autem facere asperiores molestias perferendis veritatis animi obcaecati quae atque ut ipsa, assumenda, aperiam voluptatum rem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo. Enim sit numquam facilis sequi exercitationem libero quisquam, non porro nostrum ducimus quasi. Explicabo voluptatem natus possimus facilis nihil quod.</p>
+        </div>
+    </section>
+         
+
+</body>
+</html>
