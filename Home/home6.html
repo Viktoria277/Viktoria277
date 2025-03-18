@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Різниця між адаптивним та чуйним дизайном</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="home">Головна</span> / <span class="articles">Статті</span> /
+        </div>
+        <div class="title">
+            Різниця між<br>
+            Адаптивним та<br>
+            Чуйним Дизайном
+        </div>
+        <div class="details">
+            <div class="author">
+                <img src="https://grizly.club/uploads/posts/2023-08/1691042685_grizly-club-p-kartinki-ava-bez-fona-54.jpg" alt="Автор">
+                <span>Geoff Graham</span>
+            </div>
+            <div class="dates">
+                <a href="">Перейти до коментарів</a>
+                <a href="">Опубліковано 11 листопада 2018</a>
+                <a href="">Оновлено 17 листопада 2018</a>
+            </div>
+        </div>
+    </div>
+    <style>
+        .container {
+            background-color: #2c3e50;
+            color: white;
+            padding: 5%; /* Використовуємо відсотки для адаптивності */
+            font-family: sans-serif;
+        }
+
+        .header {
+            font-size: 0.8rem; /* Використовуємо rem для відносної величини шрифту */
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Додаємо flex-wrap для перенесення елементів на новий рядок */
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .author img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+
+        .author span {
+            font-size: 1rem;
+        }
+
+        .dates {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .dates a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        /* Медіа-запити для різних розмірів екранів */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .dates {
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2rem;
+            }
+
+            .author img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>
