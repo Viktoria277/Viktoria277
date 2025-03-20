@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 231, 231);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url('https://vipdesign.kiev.ua/wp-content/uploads/2020/08/www_design_on_don_ru.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 250px ;
+}
+
+header .header-content {
+    margin-bottom: 20px;
+}
+
+header nav {
+    padding: 10px 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-buttons a {
+    background-color: #046318c5;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    
+}
+
+.menu-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.about-content, .contact-content {
+    text-align: center;
+}
