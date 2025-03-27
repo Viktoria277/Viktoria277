@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристичне агентство</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <a class="navbar-brand" href="#">Логотип</a>
+                </div>
+                <div class="col-md-9">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Напрямки</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Про нас</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Головна</a></li>
+                <li class="breadcrumb-item"><a href="#">Напрямки</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Європа</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Популярні напрямки</h2>
+        <div id="popularDestinations" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://turvopros.com/wp-content/uploads/2019/04/paris-za-5-dnei.jpg" class="d-block w-100" alt="Париж">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Париж</h5>
+                        <p>Романтичне місто кохання.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pohcdn.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Colosseum-Rome.jpg" class="d-block w-100" alt="Рим">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Рим</h5>
+                        <p>Вічне місто з багатою історією.</p>
+                    </div>
+                </div>
+                 <div class="carousel-item">
+                    <img src="https://kiyavia.com/files/cities/barselona/1.Sagrada_Familia_1000.jpg" class="d-block w-100" alt="Барселона">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Барселона</h5>
+                        <p>Місто Гауді та сонячних пляжів.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#popularDestinations" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#popularDestinations" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Вперед</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Гарячі тури</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://www.poehalisnami.ua/ContentData/Img/italy1.jpeg" class="card-img-top" alt="Тур в Італію">
+                    <div class="card-body">
+                        <h5 class="card-title">Тур в Італію</h5>
+                        <p class="card-text"><b>Ціна:</b> 1500 €</p>
+                        <p class="card-text">Незабутня подорож містами Італії.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://tourbaza.com/wp-content/uploads/2019/02/vidpochynok-na-mori-Ispaniya.jpg" class="card-img-top" alt="Тур в Іспанію">
+                    <div class="card-body">
+                        <h5 class="card-title">Тур в Іспанію</h5>
+                        <p class="card-text"><b>Ціна:</b> 1200 €</p>
+                        <p class="card-text">Відпочинок на сонячних пляжах Іспанії.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://any-tour.com.ua/wp-content/uploads/2023/07/tour-france-main-1.jpg" class="card-img-top" alt="Тур в Францію">
+                    <div class="card-body">
+                        <h5 class="card-title">Тур в Францію</h5>
+                        <p class="card-text"><b>Ціна:</b> 1300 €</p>
+                        <p class="card-text">Романтична подорож до Парижу.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Контакти</h5>
+                    <p>Телефон: +380 00 000 00 00</p>
+                    <p>Email: info@travel.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Соціальні мережі</h5>
+                    <a href="#" class="text-white">Facebook</a><br>
+                    <a href="#" class="text-white">Instagram</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Швидкі посилання</h5>
+                    <a href="#" class="text-white">Головна</a><br>
+                    <a href="#" class="text-white">Напрямки</a><br>
+                    <a href="#" class="text-white">Про нас</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
